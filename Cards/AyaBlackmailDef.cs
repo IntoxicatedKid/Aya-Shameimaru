@@ -258,10 +258,10 @@ namespace AyaShameimaru.Cards
                             }*/
                             Commented = true;
                         }
-                        if (args.Source.HasStatusEffect(typeof(AyaWalletSeDef.AyaWalletSe)) && args.Source.GetStatusEffect(typeof(AyaWalletSeDef.AyaWalletSe)).Level > 0)
+                        if (args.Source.TryGetStatusEffect<AyaWalletSeDef.AyaWalletSe>(out var wallet) && wallet.Level > 0)
                         {
-                            int num = Math.Min(Count, args.Source.GetStatusEffect(typeof(AyaWalletSeDef.AyaWalletSe)).Level);
-                            args.Source.GetStatusEffect(typeof(AyaWalletSeDef.AyaWalletSe)).Level -= num;
+                            int num = Math.Min(Count, wallet.Level);
+                            wallet.Level -= num;
                             yield return new GainMoneyAction(num, SpecialSourceType.None);
                         }
                         else
