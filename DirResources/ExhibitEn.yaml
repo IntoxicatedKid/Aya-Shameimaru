@@ -1,0 +1,8 @@
+AyaG:
+  Description: "Adds {BaseMana} to the mana base. Cards unique to |Aya| are added to the card pool.\nWhen {PlayerName} plays a |Bunbunmaru Newspaper| for the first time each combat, gain {Value1} <sprite=\"Point\" name=\"Gold\">.\n|Bunbunmaru Newspaper| deals 10 damage, has |Ethereal| and |Replenish|."
+  Name: Aya's Camera
+  FlavorText: "Despite the similar appearance to the once used Outside World camera, this camera was made by kappas, using film to capture the truth and not-so-truth."
+AyaR:
+  Description: "Adds {BaseMana} to the mana base. Cards unique to |Aya| are added to the card pool.\nAt the start of combat, gain {Value1} |Acceleration|.\n|Bunbunmaru Newspaper| deals 10 damage, has |Ethereal| and |Replenish|."
+  Name: Hauchiwa Fan
+  FlavorText: "One sweep of the fan can knock down a house, two sweeps can fell a large tree, and three sweeps can cause a traveler's cloak to be blown away."

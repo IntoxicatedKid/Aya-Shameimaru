@@ -1,0 +1,7 @@
+{
+    "name": "Aya_Shameimaru",
+    "version_number": "0.0.8",
+    "website_url": "",
+    "description": "Alpha version of playable Aya Shameimaru.",
+    "dependencies": [ "BepInEx-BepInExPack-5.4.2100", "TeamNeo-Sideloader-0.5.0" ]
+}

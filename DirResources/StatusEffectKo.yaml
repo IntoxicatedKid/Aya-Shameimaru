@@ -1,0 +1,73 @@
+AyaAccelerationSe:
+  Brief: "{PlayerName}의 턴 종료시, {PlayerName}의 |가속| 4 마다 |회피|를 1 얻습니다.\n|가속|은 방어로 얻은 |보호막|을 감소시킵니다."
+  Description: "{PlayerName}의 턴 종료시, {PlayerName}의 |가속| 4 마다 |회피|를 1 얻습니다.\n|가속|은 방어로 얻은 |보호막|을 감소시킵니다."
+  Name: 가속
+AyaAnythingisNewsworthySe:
+  Brief: '상태카드가 추가될때, "신문"이 아니라면, 대신 |붕붕마루 신문|을 추가합니다.'
+  Description: '상태카드가 추가될때, "신문"이 아니라면, 대신 |붕붕마루 신문|을 추가합니다.'
+  Name: 무엇이든 보도할수있지
+AyaArmoredRavenSe:
+  Brief: "{PlayerName}가 가하는 피해가 30% 줄어들지만 {Value1}회 더 줍니다.\n{PlayerName}는 |허약|의 효과를 받지 않습니다."
+  Description: "{OwnerName}가 가하는 피해가 30% 줄어들지만 {Level} 회 더 줍니다.\n{OwnerName}는 |허약|의 효과를 받지 않습니다."
+  Name: 중장갑 까마귀
+AyaArsenalBirdSe:
+  Brief: "{PlayerName}의 턴 시작시, 무작위 공격 또는 수비 카드를 손에 넣습니다. 그 카드들은 {Mana}의 |일시 코스트|를 가지며, |소멸| 과 |휘발성|을 가집니다.\n이 효과는 손패의 상한량을 무시합니다."
+  Description: "{OwnerName}의 턴 시작시, 무작위 공격 또는 수비 카드를 손에 넣습니다. 그 카드들은 {Mana}의 |일시 코스트|를 가지며, |소멸| 과 |휘발성|을 가집니다.\n이 효과는 손패의 상한량을 무시합니다."
+  ExtraDescription: "{OwnerName}의 턴 시작시, 무작위 공격 또는 수비 카드를 손에 넣습니다. 그 카드들은 {Mana}의 |일시 코스트|를 가지며, |소멸| 과 |휘발성|을 가집니다.\n이 효과는 손패의 상한량을 무시합니다."
+  Name: 아스널 버드
+AyaBreakingNewsSe:
+  Brief: "\"신문\"상태카드가 추가로 피해를 줍니다."
+  Description: "\"신문\"상태카드가 추가로 피해를 {Level} 줍니다."
+  Name: 속보
+AyaBunbunmaruPrinterSe:
+  Brief: "{PlayerName}의 턴 시작시, |붕붕마루 신문|을 {Level}장 뽑을 카드 더미에 추가합니다."
+  Description: "{PlayerName}의 턴 시작시, |붕붕마루 신문|을 {Level}장 뽑을 카드 더미에 추가합니다."
+  Name: 붕붕마루 프린터
+AyaEffortlessFlightSe:
+  Brief: "{PlayerName}의 턴 시작시, |가속|을 얻습니다."
+  Description: "{OwnerName}의 턴 시작시, |가속|을 {Level} 얻습니다."
+  Name: 편안한 비행
+AyaEvasionSe:
+  Brief: "{OwnerName}는 공격으로부터 0의 피해를 받습니다. |그레이즈|를 잃지 않습니다.\n공격받을시 |회피|와 |가속|이 1 감소합니다."
+  Description: "{OwnerName}는 다음 {Level}번의 공격으로부터 0의 피해를 받습니다. |그레이즈|를 잃지 않습니다.\n공격받을시 |회피|와 |가속|이 1 감소합니다."
+  Name: 회피
+AyaFastestGunSe:
+  Brief: "{OwnerName}가 잠시동안 피해를 0으로 받습니다."
+  Description: "{OwnerName}가 잠시동안 피해를 0으로 받습니다."
+  Name: 최고속의 총
+AyaNewsOverwhelmedSe:
+  Brief: "대상의 |압도|가 {TriggerLevel} 이상이면, 이 턴에 행동할 수 없다."
+  Description: "{OwnerName}의 |압도|가 {TriggerLevel} 이상이면, 이 턴에 행동할 수 없다."
+  Name: 압도
+AyaNewsOverwhelmingSe:
+  Brief: "{OwnerName}가 상태카드로 막히지 않은 피해를 주면, |압도|를 준다."
+  Description: "{OwnerName}가 상태카드로 막히지 않은 피해를 주면, |압도|를 {Level} 준다."
+  Name: 압도적인 뉴스
+AyaPanoramaSe:
+  Brief: "{PlayerName}의 턴 종료시, 모든 적에게 |파노라마|가 있다면, 모든 적은 |파노라마|만큼 피해를 받습니다.\n그 후, 모든 |파노라마|를 제거합니다."
+  Description: "{PlayerName}의 턴 종료시, 모든 적에게 |파노라마|가 있다면, 모든 적은 |파노라마|만큼 피해를 받습니다.\n그 후, 모든 |파노라마|를 제거합니다."
+  Name: 파노라마
+AyaPassiveSe:
+  Brief: '"신문" 상태 카드가 피해를 10 더 주며, |휘발성|과 |보충|을 얻는다.'
+  Description: '"신문" 상태 카드가 피해를 10 더 주며, |휘발성|과 |보충|을 얻는다'
+  Name: 리포터
+AyaPerfectEvasionSe:
+  Brief: "{OwnerName}는 |명중|과 일반 공격으로부터 0의 피해를 받습니다. |회피|와 |그레이즈|를 잃지 않습니다.\n공격 당하거나 턴 시작시 |완벽한 회피|가 1 감소합니다."
+  Description: "{OwnerName}는 다음 {Level}번의 |명중|과 일반 공격으로부터 0의 피해를 받습니다. |회피|와 |그레이즈|를 잃지 않습니다.\n공격 당하거나 턴 시작시 |완벽한 회피|가 1 감소합니다."
+  Name: 완벽한 회피
+AyaProtectionPaperSe:
+  Brief: "{PlayerName}의 턴 종료시, 손, 뽑을 카드 더미, 버린 카드 더미의 상태 카드 수만큼 |방어|를 얻습니다."
+  Description: "{PlayerName}의 턴 종료시, 손, 뽑을 카드 더미, 버린 카드 더미의 상태 카드 수만큼 |방어|를 {Level} 얻습니다."
+  Name: 보호용지
+AyaQuickdrawSe:
+  Brief: "이 카드를 뽑은 후 3초 이내에 사용할 시 발동합니다."
+  Description: "이 카드를 뽑은 후 3초 이내에 사용할 시 발동합니다."
+  Name: 속사
+AyaReignofWindSe:
+  Brief: "적이 |그레이즈|를 얻을때마다, 대신 {PlayerName}에게 적용합니다."
+  Description: "적이 |그레이즈|를 얻을때마다, 대신 {OwnerName}에게 적용합니다."
+  Name: 바람다루기
+AyaTerukuniShiningThroughHeavenandEarthSe:
+  Brief: "손패의 상한량이 {MaxHand}장으로 늘어납니다.\n{PlayerName}가 카드를 사용할 때, 최대 체력을 {Value2} 잃고 두번 사용합니다."
+  Description: "손패의 상한량이 {MaxHand}장으로 늘어납니다.\n{PlayerName}가 카드를 사용할 때, 최대 체력을 {Value2} 잃고 두번 사용합니다."
+  Name: 천상천하의 테루쿠니

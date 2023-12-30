@@ -1,0 +1,158 @@
+AyaArmoredRaven:
+  Description: "{PlayerName}'s attacks deal 30% less damage and deal that much damage {Value1} additional time.\n{PlayerName} is immune to |Weak|."
+  UpgradedDescription: "{PlayerName}'s attacks deal 30% less damage and deal that much damage {Value1} additional time.\n{PlayerName} is immune to |Weak|."
+  Name: Armored Raven
+AyaArsenalBird:
+  Description: "Lose all |Acceleration|. Gain {Shield} |Barrier|.\nAt the start of {PlayerName}'s turn, add a random Common attack or defense card to the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.\nThis effect does not stack."
+  UpgradedDescription: "Lose all |Acceleration|. Gain {Shield} |Barrier|.\nAt the start of {PlayerName}'s turn, add a random Uncommon attack or defense card to the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.\nThis effect does not stack."
+  Name: Arsenal Bird
+  DetailText: "These |e:alternate cards| ignore maximum hand size."
+AyaAnythingisNewsworthy:
+  Description: "Whenever a Status card would have added, if it's name does not contains \"News\" in it, add a |Bunbunmaru Newspaper| instead."
+  UpgradedDescription: "Whenever a Status card would have added, if it's name does not contains \"News\" in it, add a |Bunbunmaru Newspaper| instead."
+  Name: Anything is Newsworthy
+AyaAttackR:
+  Description: "Deal {Damage} damage."
+  UpgradedDescription: "Deal {Damage} damage."
+  Name: Gust Fan
+AyaAttackG:
+  Description: "Deal {Damage} damage."
+  UpgradedDescription: "Deal {Damage} damage."
+  Name: Gale Fan
+AyaBlackmail:
+  Description: "Whenever {PlayerName} takes 0 damage from attacks, if that enemy's |Wallet| is not empty, steal {Value1} <sprite=\"Point\" name=\"Gold\">.\nOtherwise, apply {Value2} |Firepower Down|."
+  UpgradedDescription: "Whenever {PlayerName} takes 0 damage from attacks, if that enemy's |Wallet| is not empty, steal {Value1} <sprite=\"Point\" name=\"Gold\">.\nOtherwise, apply {Value2} |Firepower Down|."
+  Name: Blackmail
+  DetailText: If you try to |Blackmail| your boss...
+AyaBlockG:
+  Description: "Gain {Block} |Block|."
+  UpgradedDescription: "Gain {Block} |Block|."
+  Name: Tengu's Mist Standing
+AyaBlockR:
+  Description: "Gain {Block} |Block|."
+  UpgradedDescription: "Gain {Block} |Block|."
+  Name: Wind Sickle Veiling
+AyaBreakingNews:
+  Description: "Increase the damage of Status \"News\" cards by {Value1}."
+  UpgradedDescription: "Increase the damage of Status \"News\" cards by {Value1}."
+  Name: Breaking News
+AyaBunbunmaruPrinter:
+  Description: "At the start of {PlayerName}'s turn, add |{Value1:plural one='% Bunbunmaru Newspaper' other='% Bunbunmaru Newspapers'}| to the draw pile."
+  UpgradedDescription: "At the start of {PlayerName}'s turn, add |{Value1:plural one='% Bunbunmaru Newspaper' other='% Bunbunmaru Newspapers'}| to the draw pile."
+  Name: Bunbunmaru Printer
+AyaComicallyLargeHat:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Comically Large Hat
+AyaCreativeThinking:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Creative Thinking
+AyaEffortlessFlight:
+  Description: "At the start of {PlayerName}'s turn, gain {Value1} |Acceleration|."
+  UpgradedDescription: "At the start of {PlayerName}'s turn, gain {Value1} |Acceleration|."
+  Name: Effortless Flight
+AyaFastDraw:
+  Description: "Put the top card of the draw pile into the hand. Then, play that card.\nTrigger |Quickdraw| from that card with doubled effects."
+  UpgradedDescription: "Put the top card of the draw pile into the hand. Then, play that card.\nTrigger |Quickdraw| from that card with doubled effects."
+  Name: Fast Draw
+AyaFastestGun:
+  Description: "Deal {Damage} damage.\n|Quickdraw|: Apply {Value2} |Lock On| and take no damage until {SelfName} is resolved."
+  UpgradedDescription: "Deal {Damage} damage.\n|Quickdraw|: Apply {Value2} |Lock On| and take no damage until {SelfName} is resolved."
+  Name: Fastest Gun in the East
+AyaFma:
+  Description: "Gain {Value1} |Firepower|.\nFor each 4 |Acceleration| {PlayerName} has, increase {SelfName}'s |Firepower| by 1.\n|At the start of combat|: {SelfName} |costs| <sprite=\"ManaSprite\" name=\"0\"> for {Value2:plural one='% second' other='% seconds'}."
+  UpgradedDescription: "Gain {Value1} |Firepower|.\nFor each 4 |Acceleration| {PlayerName} has, increase {SelfName}'s |Firepower| by 1.\n|At the start of combat|: {SelfName} |costs| <sprite=\"ManaSprite\" name=\"0\"> for {Value2:plural one='% second' other='% seconds'}."
+  Name: F = ma
+AyaFormofSalvation:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Form of Salvation
+AyaFriendMomiji:
+  Description: "{FriendP}|f:Telegnosis|: The draw pile can be viewed in actual order."
+  UpgradedDescription: "{FriendP}|f:Telegnosis|: The draw pile can be viewed in actual order."
+  ExtraDescription1: "{FriendP2}|f:Chase|: When {PlayerName} deals attack damage, deal {Damage} damage to the target.\n{FriendP2}|f:Parry|: When {PlayerName} receives attack damage and would lose life from it, gain {Block} |Block|."
+  UpgradedExtraDescription1: "{FriendP2}|f:Chase|: When {PlayerName} deals attack damage, deal {Damage} damage to the target.\n{FriendP2}|f:Parry|: When {PlayerName} receives attack damage and would lose life from it, gain {Block} |Block|."
+  ExtraDescription2: "{FriendU}|u:Fang Sign\u300CChewing Satisfaction\u300D|: Deal {Damage2} damage to the enemy with the least life. |Expel|: gain {Value2} life. |Accurate|"
+  UpgradedExtraDescription2: "{FriendU}|u:Fang Sign\u300CChewing Satisfaction\u300D|: Deal {Damage2} damage to the enemy with the least life. |Expel|: gain {Value2} life. |Accurate|"
+  Name: Momiji, The Petty Patrol Tengu
+AyaIllusionaryDominance:
+  Description: "Deal {Damage} damage {Times} times.\nDeal additional damage equal to {PlayerName}'s |Acceleration|.\nDeal that damage an additional time equal to {PlayerName}'s |Evasion|."
+  UpgradedDescription: "Deal {Damage} damage to each enemy {Times} times.\nDeal additional damage equal to {PlayerName}'s |Acceleration|.\nDeal that damage an additional time equal to {PlayerName}'s |Evasion|."
+  Name: Illusionary Dominance
+AyaKappaSupply:
+  Description: "Lose {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nIf the target intends to attack, gain {Block} |Block|. Otherwise, deal {Damage} damage.\nAdd a random |Tool| card to the hand. It's treated as a |Copy| and has |Limited\u30101\u3011|."
+  UpgradedDescription: "Lose {MoneyCost} <sprite=\"Point\" name=\"Gold\">.\nIf the target intends to attack, gain {Block} |Block|. Otherwise, deal {Damage} damage.\nAdd a random |Tool| card to the hand. It's treated as a |Copy| and has |Limited\u30101\u3011|."
+  Name: Kappa Supply
+  AltDetailText: "If total amount of damage dealt to {PlayerName} this turn exceeds sum of {PlayerName}'s life, block and barrier, add an |Angel's Raiment|."
+AyaMemoryinPicture:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Memory in Picture
+AyaMultiCamera:
+  Description: "Deal {Damage} damage.\nWhenever a status card is |Exiled|, return {SelfName} from the discard pile to the hand. It |temporarily costs| {Mana}."
+  UpgradedDescription: "Deal {Damage} damage.\nWhenever a status card is |Exiled|, return {SelfName} from the discard pile to the hand. It |temporarily costs| {Mana}."
+  Name: Multi-Camera
+AyaNewsDissemination:
+  Description: "Add a |Glare| to the draw pile.\nGain {Mana}."
+  UpgradedDescription: "Add a |Glare| to the discard pile.\nGain {Mana}."
+  Name: News Dissemination
+AyaNewsOverwhelming:
+  Description: "Whenever {PlayerName} deals unblocked attack damage by playing a Status card, apply {Value1} |Overwhelmed|.\nIf the target has 8 or more |Overwhelmed|, it cannot act this turn."
+  UpgradedDescription: "Whenever {PlayerName} deals unblocked attack damage by playing a Status card, apply {Value1} |Overwhelmed|.\nIf the target has 8 or more |Overwhelmed|, it cannot act this turn."
+  Name: News Overwhelming
+AyaNewsSpecial:
+  NonbattleDescription: "Deal {Damage} damage. Then, deal half that much damage to\
+    \ each other enemy."
+  Description: "Deal {Damage} damage. Then, deal {HalfDamage} damage to each other\
+    \ enemy."
+  Name: Bunbunmaru Newspaper Special
+AyaNobility:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Nobility
+AyaPanorama:
+  Description: "Apply {Value1} |Panorama|.\n{SelfName} gains |Temporary Retain| and |Unplayable|, remain in the hand.\n|When Retained|: {SelfName} loses |Unplayable|.\nAt the end of {PlayerName}'s turn, if all enemies have |Panorama|, discard {SelfName}, add a |Glare| to the discard pile and a |Bunbunmaru Newspaper Special| to the hand."
+  UpgradedDescription: "Apply {Value1} |Panorama|.\n{SelfName} gains |Temporary Retain| and |Unplayable|, remain in the hand.\n|When Retained|: {SelfName} loses |Unplayable|.\nAt the end of {PlayerName}'s turn, if all enemies have |Panorama|, discard {SelfName}, add a |Glare| to the discard pile and a |Bunbunmaru Newspaper Special| to the hand."
+  Name: Panorama
+AyaPeltingintheDarkNight:
+  Description: "|When {SelfName} enters the hand|: Deal {Damage} damage to the enemy with the least life and discard {SelfName}."
+  UpgradedDescription: "|When {SelfName} enters the hand|: Deal {Damage} damage to the enemy with the least life and discard {SelfName}."
+  Name: Pelting in the Dark Night
+AyaPerfectEvasion:
+  Description: "Gain {Value1} |Perfect Evasion|."
+  UpgradedDescription: "Gain {Value1} |Perfect Evasion|."
+  Name: Authority of Evasion
+AyaProtectionPaper:
+  Description: "At the end of {PlayerName}'s turn, gain {Value1} |Block| for each Status card in the hand, draw pile, and discard pile."
+  UpgradedDescription: "At the end of {PlayerName}'s turn, gain {Value1} |Block| for each Status card in the hand, draw pile, and discard pile."
+  Name: Protection Paper
+AyaRuinBird:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Ruin Bird
+AyaReignofWind:
+  Description: "Whenever an enemy would gain |Graze|, apply it to {PlayerName} instead.\nGain {Value1} |Graze|."
+  UpgradedDescription: "Whenever an enemy would gain |Graze|, apply it to {PlayerName} instead.\nGain {Value1} |Graze|."
+  Name: Reign of Wind
+AyaSuspiciousInterview:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Suspicious Interview
+AyaTakePicture:
+  Description: "Deal {Damage} damage.\nAdd {Value1} |Bunbunmaru Newspaper| to the top of the draw pile.\nDraw {Value1:plural one='% card' other='% cards'}."
+  UpgradedDescription: "Deal {Damage} damage.\nAdd {Value1} |Bunbunmaru Newspaper| to the top of the draw pile.\nDraw {Value1:plural one='% card' other='% cards'}."
+  Name: Take Picture
+AyaTerukuniShiningThroughHeavenandEarth:
+  Description: "Gain {Mana}.\nThe maximum hand size becomes {MaxHand}.\nDraw cards until the hand is full.\nWhenever {PlayerName} plays a card, lose {Value2} maximum life and play twice. This effect does not stack.\n|Limited\u3010{Value2}\u3011|"
+  UpgradedDescription: "Gain {Mana}.\nThe maximum hand size becomes {MaxHand}.\nDraw cards until the hand is full.\nWhenever {PlayerName} plays a card, lose {Value2} maximum life and play twice. This effect does not stack.\n|Limited\u3010{Value2}\u3011|"
+  Name: Terukuni Shining Through Heaven and Earth
+  DetailText: "{SelfName} cannot be produced by other cards."
+AyaWhatRemains:
+  Description: ""
+  UpgradedDescription: ""
+  Name: What Remains
+AyaWindWalk:
+  Description: "Deal {Damage} damage.\nGain {Value1} |Acceleration|."
+  UpgradedDescription: "Deal {Damage} damage.\nGain {Value1} |Acceleration|."
+  Name: Wind Walk

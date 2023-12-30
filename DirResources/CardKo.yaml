@@ -1,0 +1,154 @@
+AyaArmoredRaven:
+  Description: "{PlayerName}가 가하는 피해가 30% 줄어들지만 {Value1}회 더 줍니다.\n{PlayerName}는 |허약|의 효과를 받지 않습니다."
+  UpgradedDescription: "{PlayerName}가 가하는 피해가 30% 줄어들지만 {Value1}회 더 줍니다.\n{PlayerName}는 |허약|의 효과를 받지 않습니다."
+  Name: 중장갑 까마귀
+AyaArsenalBird:
+  Description: "|가속|을 전부 잃습니다. |보호막을| {Shield} 얻습니다.\n{PlayerName}의 턴 시작시, 무작위 공격 또는 수비 카드를 손에 넣습니다. 그 카드들은 {Mana}의 |일시 코스트|를 가지며, |소멸| 과 |휘발성|을 가집니다.\n이 효과는 중첩되지 않습니다."
+  UpgradedDescription: "|가속|을 전부 잃습니다. |보호막을| {Shield} 얻습니다.\n{PlayerName}의 턴 시작시, 무작위 공격 또는 수비 카드를 손에 넣습니다. 그 카드들은 {Mana}의 |일시 코스트|를 가지며, |소멸| 과 |휘발성|을 가집니다.\n이 효과는 중첩되지 않습니다."
+  Name: 아스널 버드
+  DetailText: "이 효과는 손패의 상한량을 무시합니다."
+AyaAnythingisNewsworthy:
+  Description: '상태카드가 추가될때, "신문"이 아니라면, 대신 |붕붕마루 신문|을 추가합니다.'
+  UpgradedDescription: '상태카드가 추가될때, "신문"이 아니라면, 대신 |붕붕마루 신문|을 추가합니다.'
+  Name: 무엇이든 보도할수있지
+AyaAttackR:
+  Description: "피해를 {Damage} 줍니다."
+  UpgradedDescription: "피해를 {Damage} 줍니다."
+  Name: 질풍선
+AyaAttackG:
+  Description: "피해를 {Damage} 줍니다."
+  UpgradedDescription: "피해를 {Damage} 줍니다."
+  Name: 열풍선
+AyaBlockG:
+  Description: "|방어|를 {Block} 얻습니다."
+  UpgradedDescription: "|방어|를 {Block} 얻습니다."
+  Name: 텐구의 바람이슬 일으키기
+AyaBlockR:
+  Description: "|방어|를 {Block} 얻습니다."
+  UpgradedDescription: "|방어|를 {Block} 얻습니다."
+  Name: 겸풍 베일링
+AyaBreakingNews:
+  Description: "\"신문\"상태카드가 추가로 피해를 {Value1} 줍니다."
+  UpgradedDescription: "\"신문\"상태카드가 추가로 피해를 {Value1} 줍니다."
+  Name: 속보
+AyaBunbunmaruPrinter:
+  Description: "{PlayerName}의 턴 시작시, |붕붕마루 신문|을 {Value1}장 뽑을 카드 더미에 추가합니다."
+  UpgradedDescription: "{PlayerName}의 턴 시작시, |붕붕마루 신문|을 {Value1}장 뽑을 카드 더미에 추가합니다."
+  Name: 붕붕마루 프린터
+AyaComicallyLargeHat:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Comically Large Hat
+AyaCreativeThinking:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Creative Thinking
+AyaEffortlessFlight:
+  Description: "{PlayerName}의 턴 시작시, |가속|을 {Value1} 얻습니다."
+  UpgradedDescription: "{PlayerName}의 턴 시작시, |가속|을 {Value1} 얻습니다."
+  Name: 편안한 비행
+AyaFastDraw:
+  Description: "뽑을 카드 더미 맨 위의 카드를 손으로 가져옵니다. 그 후, 그 카드를 사용합니다.\n그 카드의 |속사| 효과는 두배가 됩니다."
+  UpgradedDescription: "뽑을 카드 더미 맨 위의 카드를 손으로 가져옵니다. 그 후, 그 카드를 사용합니다.\n그 카드의 |속사| 효과는 두배가 됩니다."
+  Name: 빨리 뽑기
+AyaFastestGun:
+  Description: "피해를 {Damage} 줍니다.\n|속사|: |록온|을 {Value2} 주고 {SelfName}를 사용하는 동안 피해를 받지 않습니다."
+  UpgradedDescription: "피해를 {Damage} 줍니다.\n|속사|: |록온|을 {Value2} 주고 {SelfName}를 사용하는 동안 피해를 받지 않습니다."
+  Name: 최고속의 총
+AyaFma:
+  Description: "|화력|을 {Value1} 얻습니다.\n{PlayerName}의 |가속| 4마다, {SelfName}의 |화력|이 1 증가합니다.\n|전투 시작시|: {Value2}초 동안 {SelfName}의 |비용|이 <sprite=\"ManaSprite\" name=\"0\">이 됩니다."
+  UpgradedDescription: "|화력|을 {Value1} .\n{PlayerName}의 |가속| 4마다, {SelfName}의 |화력|이 1 증가합니다.\n|전투 시작시|: {Value2}초 동안 {SelfName}의 |비용|이 <sprite=\"ManaSprite\" name=\"0\">이 됩니다."
+  Name: F = ma
+AyaFormofSalvation:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Form of Salvation
+AyaFriendMomiji:
+  Description: "{FriendP}|f:천리안|: 뽑을 카드더미가 실제 순서대로 보입니다."
+  UpgradedDescription: "{FriendP}|f:천리안|: 뽑을 카드더미가 실제 순서대로 보입니다."
+  ExtraDescription1: "{FriendP2}|f:추격|: {PlayerName}가 공격 피해를 가하면, 그 대상에게 피해를 {Damage} 줍니다.\n{FriendP2}|f:받아넘기기|: {PlayerName}이 공격 피해를 받아 체력을 잃으려할때, |방어|를 {Block} 얻습니다."
+  UpgradedExtraDescription1: "{FriendP2}|f:추격|: {PlayerName}가 공격 피해를 가하면, 그 대상에게 피해를 {Damage} 줍니다.\n{FriendP2}|f:받아넘기기|: {PlayerName}이 공격 피해를 받아 체력을 잃으려할때, |방어|를 {Block} 얻습니다."
+  ExtraDescription2: "{FriendU}|u:아부\u300C저작완미\u300D|: 체력이 가장 적은 적에게 피해를 {Damage2} 줍니다. |퇴치|: 체력을 {Value2} 회복합니다. |명중|"
+  UpgradedExtraDescription2: "{FriendU}|u:아부\u300C저작완미\u300D|: 체력이 가장 적은 적에게 피해를 {Damage2} 줍니다. |퇴치|: 체력을 {Value2} 회복합니다. |명중|"
+  Name: 모미지, 귀여운 백랑 텐구
+AyaIllusionaryDominance:
+  Description: "피해를 {Damage}씩 {Times}번 줍니다.\n{PlayerName}의 |가속|만큼 피해가 증가합니다.\n{PlayerName}의 |회피|만큼 공격횟수가 증가합니다."
+  UpgradedDescription: "모든 적에게 피해를 {Damage}씩 {Times}번 줍니다.\n{PlayerName}의 |가속|만큼 피해가 증가합니다.\n{PlayerName}의 |회피|만큼 공격횟수가 증가합니다."
+  Name: 환상풍미
+AyaKappaSupply:
+  Description: "<sprite=\"Point\" name=\"Gold\">를 {MoneyCost} 잃습니다.\n대상이 공격하려하면, |방어|를 {Block} 얻습니다. 아니라면, 피해를 {Damage} 줍니다.\n손에 무작위 |도구| 카드를 추가합니다. 그 카드는 |복사본|과 |사용제한\u30101\u3011|을 얻습니다."
+  UpgradedDescription: "<sprite=\"Point\" name=\"Gold\">를 {MoneyCost} 잃습니다.\n대상이 공격하려하면, |방어|를 {Block} 얻습니다. 아니라면, 피해를 {Damage} 줍니다.\n손에 무작위 |도구| 카드를 추가합니다. 그 카드는 |복사본|과 |사용제한\u30101\u3011|을 얻습니다."
+  Name: 갓파의 지원
+  AltDetailText: "만약 이번턴에 {PlayerName}가 받을 피해가 {PlayerName}의 체력, 보호막, 방어보다 높다면, |용궁의 깃옷|을 얻습니다."
+AyaMemoryinPicture:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Memory in Picture
+AyaMultiCamera:
+  Description: "피해를 {Damage} 줍니다.\n상태카드가 |소멸|하면, 버린 카드 더미에서 {SelfName}을 손으로 가져오고, {Mana}의 |일시 코스트|를 가집니다."
+  UpgradedDescription: "피해를 {Damage} 줍니다.\n상태카드가 |소멸|하면, 버린 카드 더미에서 {SelfName}을 손으로 가져오고, {Mana}의 |일시 코스트|를 가집니다"
+  Name: 다중 카메라
+AyaNewsDissemination:
+  Description: "뽑을 카드 더미에 |현광|을 추가합니다.\n{Mana}를 얻습니다."
+  UpgradedDescription: "뽑을 카드 더미에 |현광|을 추가합니다.\n{Mana}를 얻습니다."
+  Name: 뉴스 전파
+AyaNewsOverwhelming:
+  Description: "{PlayerName}가 상태카드로 막히지 않은 공격피해를 줄때마다, |압도|를 {Value1} 줍니다.\n대상의 |압도|가 8 이상이면, 이 턴에 행동할 수 없습니다."
+  UpgradedDescription: "{PlayerName}가 상태카드로 막히지 않은 공격피해를 줄때마다, |압도|를 {Value1} 줍니다.\n대상의 |압도|가 8 이상이면, 이 턴에 행동할 수 없습니다."
+  Name: 압도적인 뉴스로!
+AyaNewsSpecial:
+  NonbattleDescription:
+    "피해를 {Damage} 줍니다. 그 후 절반만큼 다른 모든 적에게\
+    \ 피해를 줍니다."
+  Description: "피해를 {Damage} 줍니다. 그 후 다른 모든 적에게 피해를\
+    \ {HalfDamage} 줍니다."
+  Name: 특별 붕붕마루 신문
+AyaNobility:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Nobility
+AyaPanorama:
+  Description: "|파노라마|를 {Value1} 줍니다.\n{SelfName}는 |일시 보존|과 |사용불가|를 얻고, 손으로 돌아옵니다.\n|보존될 시|: {SelfName}의 |사용불가|를 제거합니다.\n{PlayerName}의 턴 종료시, 모든 적에게 |파노라마|가 있다면, {SelfName}을 버리고, 버린 카드 더미에 |현광|을 추가하고 |특별 붕붕마루 신문|을 손에 넣습니다."
+  UpgradedDescription: "|파노라마|를 {Value1} 줍니다.\n{SelfName}는 |일시 보존|과 |사용불가|를 얻고, 손으로 돌아옵니다.\n|보존될 시|: {SelfName}의 |사용불가|를 제거합니다.\n{PlayerName}의 턴 종료시, 모든 적에게 |파노라마|가 있다면, {SelfName}을 버리고, 버린 카드 더미에 |현광|을 추가하고 |특별 붕붕마루 신문|을 손에 넣습니다."
+  Name: 파노라마
+AyaPeltingintheDarkNight:
+  Description: "|{SelfName}가 패로 들어올시|: 가장 체력이 적은 적에게 피해를 {Damage} 주고 {SelfName}를 버립니다."
+  UpgradedDescription: "|{SelfName}가 패로 들어올시|: 가장 체력이 적은 적에게 피해를 {Damage} 주고 {SelfName}를 버립니다."
+  Name: 한밤중의 투척
+AyaPerfectEvasion:
+  Description: "|완벽한 회피|를 {Value1} 얻습니다."
+  UpgradedDescription: "|완벽한 회피|를 {Value1} 얻습니다."
+  Name: 회피의 신위
+AyaProtectionPaper:
+  Description: "{PlayerName}의 턴 종료시, 손, 뽑을 카드 더미, 버린 카드 더미의 상태 카드 수만큼 |방어|를 {Value1} 얻습니다."
+  UpgradedDescription: "{PlayerName}의 턴 종료시, 손, 뽑을 카드 더미, 버린 카드 더미의 상태 카드 수만큼 |방어|를 {Value1} 얻습니다."
+  Name: 보호용지
+AyaRuinBird:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Ruin Bird
+AyaReignofWind:
+  Description: "적이 |그레이즈|를 얻을때마다, 대신 {PlayerName}에게 적용합니다.\n|그레이즈|를 {Value1} 얻습니다."
+  UpgradedDescription: "적이 |그레이즈|를 얻을때마다, 대신 {PlayerName}에게 적용합니다.\n|그레이즈|를 {Value1} 얻습니다."
+  Name: 바람다루기
+AyaSuspiciousInterview:
+  Description: ""
+  UpgradedDescription: ""
+  Name: Suspicious Interview
+AyaTakePicture:
+  Description: "피해를 {Damage} 줍니다.\n|붕붕마루 신문|을 {Value1}장 뽑을 카드 더미 맨위에 놓습니다.\n카드를 {Value1}장 뽑습니다."
+  UpgradedDescription: "피해를 {Damage} 줍니다.\n|붕붕마루 신문|을 {Value1}장 뽑을 카드 더미 맨위에 놓습니다.\n카드를 {Value1}장 뽑습니다."
+  Name: 사진찍기
+AyaTerukuniShiningThroughHeavenandEarth:
+  Description: "{Mana}를 얻습니다.\n손패의 상한량이 {MaxHand}장으로 늘어납니다.\n손이 꽉 찰때 까지 카드를 뽑습니다.\n{PlayerName}가 카드를 사용할 때, 최대 체력을 {Value2} 잃고 두번 사용합니다. 이 효과는 중첩되지 않습니다.\n|사용 제한\u3010{Value2}\u3011|"
+  UpgradedDescription: "{Mana}를 얻습니다.\n손패의 상한량이 {MaxHand}장으로 늘어납니다.\n손이 꽉 찰때 까지 카드를 뽑습니다.\n{PlayerName}가 카드를 사용할 때, 최대 체력을 {Value2} 잃고 두번 사용합니다. 이 효과는 중첩되지 않습니다.\n|사용 제한\u3010{Value2}\u3011|"
+  Name: 천상천하의 테루쿠니
+  DetailText: "{SelfName}는 다른 카드로 얻을 수 없습니다."
+AyaWhatRemains:
+  Description: ""
+  UpgradedDescription: ""
+  Name: What Remains
+AyaWindWalk:
+  Description: "피해를 {Damage} 줍니다.\n|가속|을 {Value1} 얻습니다."
+  UpgradedDescription: "피해를 {Damage} 줍니다.\n|가속|을 {Value1} 얻습니다."
+  Name: 바람걷기

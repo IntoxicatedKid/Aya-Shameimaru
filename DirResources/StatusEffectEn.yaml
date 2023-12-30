@@ -1,0 +1,87 @@
+AyaAccelerationSe:
+    Brief: "At the end of {PlayerName}'s turn, replenish 1 |Evasion| for each 4 |Acceleration| {PlayerName} has.\n|Acceleration| decreases |Barrier| gained from defending."
+    Description: "At the end of {OwnerName}'s turn, replenish 1 |Evasion| for each 4 |Acceleration| {PlayerName} has.\n|Acceleration| decreases |Barrier| gained from defending."
+    Name: Acceleration
+AyaAnythingisNewsworthySe:
+    Brief: "Whenever a Status card would have added, if it's name does not contains \"News\" in it, add a |Bunbunmaru Newspaper| instead."
+    Description: "Whenever a Status card would have added, if it's name does not contains \"News\" in it, add a |Bunbunmaru Newspaper| instead."
+    Name: Anything is Newsworthy
+AyaArmoredRavenSe:
+    Brief: "{PlayerName}'s attacks deal 30% less damage and deal that much damage {Value1} additional time.\n{PlayerName} is immune to |Weak|."
+    Description: "{OwnerName}'s attacks deal 30% less damage and deal that much damage {Level} additional time.\n{OwnerName} is immune to |Weak|."
+    Name: Armored Raven
+AyaArsenalBirdSe:
+    Brief: "At the start of {PlayerName}'s turn, add a random attack or defense card to the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.\nThis effect ignores maximum hand size."
+    Description: "At the start of {OwnerName}'s turn, add a random Common attack or defense card to the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.\nThis effect ignores maximum hand size."
+    ExtraDescription: "At the start of {OwnerName}'s turn, add a random Uncommon attack or defense card to the hand. It |temporarily costs| {Mana} and has |Exile| and |Ethereal|.\nThis effect ignores maximum hand size."
+    Name: Arsenal Bird
+AyaBlackmailSe:
+    Brief: "Status \"News\" cards deal more damage."
+    Description: "Status \"News\" cards deal {Level} more damage."
+    Name: Blackmail
+    Blackmail1: "Look at what {Target} is doing! That's proof {Target} is the culprit!"
+    Blackmail2: "Local residents commit violence against journalist! Is this an attempt to overthrow Gensokyo?"
+    Blackmail3: "A journalist trying to tell the truth is in danger! They want to silence us!"
+    Blackmail4: "Extra! Extra! Gensokyo is under attack!"
+    BlackmailMegumu1: "Oh my, are you trying to blackmail me?"
+    BlackmailMegumu2: "Be prepared to dance naked at today's banquet, no matter what."
+AyaBreakingNewsSe:
+    Brief: "Status \"News\" cards deal more damage."
+    Description: "Status \"News\" cards deal {Level} more damage."
+    Name: Breaking News
+AyaBunbunmaruPrinterSe:
+    Brief: "At the start of {PlayerName}'s turn, add |Bunbunmaru Newspaper| to the draw pile."
+    Description: "At the start of {OwnerName}'s turn, add {Level} |Bunbunmaru Newspaper| to the draw pile."
+    Name: Bunbunmaru Printer
+AyaEffortlessFlightSe:
+    Brief: "At the start of {PlayerName}'s turn, gain |Acceleration|."
+    Description: "At the start of {OwnerName}'s turn, gain {Level} |Acceleration|."
+    Name: Effortless Flight
+AyaEvasionSe:
+    Brief: "{OwnerName} takes 0 damage from attacks. Prevents |Graze| from losing it.\nLose 1 |Evasion| and |Acceleration| when attacked."
+    Description: "{OwnerName} takes 0 damage from the next {Level:plural one='attack' other='% attacks'}. Prevents |Graze| from losing it.\nLose 1 |Evasion| and |Acceleration| when attacked."
+    Name: Evasion
+AyaFastestGunSe:
+    Brief: "{OwnerName} takes 0 damage for a brief moment."
+    Description: "{OwnerName} takes 0 damage for a brief moment."
+    Name: Fastest Gun
+AyaNewsOverwhelmedSe:
+    Brief: "When the target has {TriggerLevel} or more |Overwhelmed|, it cannot act this turn."
+    Description: "When {OwnerName} has {TriggerLevel} or more |Overwhelmed|, it cannot act this turn."
+    Name: Overwhelmed
+AyaNewsOverwhelmingSe:
+    Brief: "Whenever {OwnerName} deals unblocked attack damage by playing a Status card, apply |Overwhelmed|."
+    Description: "Whenever {OwnerName} deals unblocked attack damage by playing a Status card, apply {Level} |Overwhelmed|."
+    Name: News Overwhelming
+AyaPanoramaSe:
+    Brief: "At the end of {PlayerName}'s turn, if all enemies have |Panorama|, all enemies lose life equal to the total of the |Panorama| applied to them.\nThen, remove |Panorama| from each enemy."
+    Description: "At the end of {PlayerName}'s turn, if all enemies have |Panorama|, all enemies lose life equal to the total of the |Panorama| applied to them.\nThen, remove |Panorama| from each enemy."
+    Name: Panorama
+AyaPassiveSe:
+    Brief: "Status \"News\" cards deal 10 more damage, has |Ethereal| and |Replenish|."
+    Description: "Status \"News\" cards deal 10 more damage, has |Ethereal| and |Replenish|."
+    Name: Reporter
+AyaPerfectEvasionSe:
+    Brief: "{OwnerName} takes 0 damage from |Accurate| attacks. Prevents |Evasion| and/or |Graze| from losing it.\nLose 1 |Perfect Evasion| when accurately attacked or at the start of each turn."
+    Description: "{OwnerName} takes 0 damage from the next {Level:plural one='accurate attack' other='% accurate attacks'}. Prevents |Evasion| and/or |Graze| from losing it.\nLose 1 |Perfect Evasion| when accurately attacked or when turn starts."
+    Name: Perfect Evasion
+AyaProtectionPaperSe:
+    Brief: "At the end of {PlayerName}'s turn, gain |Block| for each Status card in the hand, draw pile, and discard pile."
+    Description: "At the end of {OwnerName}'s turn, gain {Level} |Block| for each Status card in the hand, draw pile, and discard pile."
+    Name: Protection Paper
+AyaQuickdrawSe:
+    Brief: "Activates when this card is played in less than 3 seconds after drawn."
+    Description: "Activates when this card is played in less than 3 seconds after drawn."
+    Name: Quickdraw
+AyaReignofWindSe:
+    Brief: "Whenever an enemy would gain |Graze|, apply it to {PlayerName} instead."
+    Description: "Whenever an enemy would gain |Graze|, apply it to {OwnerName} instead."
+    Name: Reign of Wind
+AyaTerukuniShiningThroughHeavenandEarthSe:
+    Brief: "The maximum hand size becomes {MaxHand}.\nWhenever {PlayerName} plays a card, lose 1 maximum life and play twice."
+    Description: "The maximum hand size becomes {MaxHand}.\nWhenever {OwnerName} plays a card, lose 1 maximum life and play twice."
+    Name: Terukuni Shining Through Heaven and Earth
+AyaWalletSe:
+    Brief: "{OwnerName} currently holds <sprite=\"Point\" name=\"Gold\">."
+    Description: "{OwnerName} currently holds {Level} <sprite=\"Point\" name=\"Gold\">."
+    Name: Wallet
