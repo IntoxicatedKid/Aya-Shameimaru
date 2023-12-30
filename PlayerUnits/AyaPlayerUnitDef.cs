@@ -19,7 +19,6 @@ using LBoLEntitySideloader.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using AyaShameimaru.EnemyUnits;
 using AyaShameimaru.StatusEffects;
 using UnityEngine;
 using static AyaShameimaru.BepinexPlugin;
