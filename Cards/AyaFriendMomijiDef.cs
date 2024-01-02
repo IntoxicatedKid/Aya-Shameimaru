@@ -19,6 +19,7 @@ using System.Linq;
 using static UnityEngine.GraphicsBuffer;
 using System;
 using AyaShameimaru.StatusEffects;
+using System.Collections;
 
 namespace AyaShameimaru.Cards
 {
@@ -114,7 +115,6 @@ namespace AyaShameimaru.Cards
     [EntityLogic(typeof(AyaFriendMomijiDef))]
     public sealed class AyaFriendMomiji : Card
     {
-        [UsedImplicitly]
         public DamageInfo Damage2
         {
             get
@@ -122,7 +122,7 @@ namespace AyaShameimaru.Cards
                 return DamageInfo.Attack(Damage.Amount * 2, true);
             }
         }
-        [UsedImplicitly]
+
         public FriendCostInfo FriendP2
         {
             get
@@ -130,62 +130,81 @@ namespace AyaShameimaru.Cards
                 return new FriendCostInfo(-2, FriendCostType.Passive);
             }
         }
-        private bool attacked;
+
+
+        public int PassiveBlock
+        {
+            get
+            {
+                return base.ConfigBlock;
+            }
+        }
+
         protected override void OnEnterBattle(BattleController battle)
         {
-            ReactBattleEvent(Battle.Player.DamageDealt, new EventSequencedReactor<DamageEventArgs>(OnPlayerDamageDealt));
             ReactBattleEvent(Battle.Player.StatisticalTotalDamageDealt, new EventSequencedReactor<StatisticalDamageEventArgs>(OnPlayerStatisticalTotalDamageDealt));
-            ReactBattleEvent(Battle.Player.DamageReceiving, new EventSequencedReactor<DamageEventArgs>(OnPlayerDamageReceiving));
+            HandleBattleEvent(Battle.Player.DamageTaking, OnPlayerDamageTaking, (GameEventPriority)(45));
         }
-        private IEnumerable<BattleAction> OnPlayerDamageDealt(DamageEventArgs args)
+
+
+        private IEnumerable<BattleAction> AttackPassive(IEnumerable<Unit> targets)
         {
-            if (args.DamageInfo.DamageType == DamageType.Attack && args.ActionSource != this)
+            NotifyActivating();
+            Loyalty += FriendP2.Cost;
+            for (int i = 0; i < Battle.FriendPassiveTimes; i++)
             {
-                attacked = true;
-            }
-            yield break;
-        }
-        private IEnumerable<BattleAction> OnPlayerStatisticalTotalDamageDealt(StatisticalDamageEventArgs args)
-        {
-            if (!Battle.BattleShouldEnd && Zone == CardZone.Hand && Summoned && Loyalty >= -FriendP2.Cost && attacked)
-            {
-                attacked = false;
-                NotifyActivating();
-                Loyalty += FriendP2.Cost;
-                int num;
-                for (int i = 0; i < Battle.FriendPassiveTimes; i = num + 1)
+                if (Battle.BattleShouldEnd)
                 {
-                    if (Battle.BattleShouldEnd)
-                    {
-                        yield break;
-                    }
-                    num = i;
+                    yield break;
                 }
                 yield return PerformAction.Sfx("FairySupport", 0f);
-                yield return new DamageAction(Battle.Player, args.ArgsTable.Keys, Damage, "YoumuKan", GunType.Single);
+                yield return new DamageAction(Battle.Player, targets, Damage, "YoumuKan", GunType.Single);
             }
-            attacked = false;
-            yield break;
         }
-        private IEnumerable<BattleAction> OnPlayerDamageReceiving(DamageEventArgs args)
+
+        private IEnumerable<BattleAction> ParryPassive(DamageEventArgs args = null) 
         {
-            if (!Battle.BattleShouldEnd && Zone == CardZone.Hand && Summoned && Loyalty >= -FriendP2.Cost && args.DamageInfo.DamageType == DamageType.Attack && args.Cause != ActionCause.OnlyCalculate && args.DamageInfo.Damage.RoundToInt() > Battle.Player.Block + Battle.Player.Shield && ((args.DamageInfo.IsAccuracy == true && !Battle.Player.HasStatusEffect(typeof(AyaPerfectEvasionSeDef.AyaPerfectEvasionSe))) || (args.DamageInfo.IsAccuracy == false && !Battle.Player.HasStatusEffect<Graze>() && !Battle.Player.HasStatusEffect(typeof(AyaEvasionSeDef.AyaEvasionSe)))))
+            NotifyActivating();
+            Loyalty += FriendP2.Cost;
+            for (int i = 0; i < Battle.FriendPassiveTimes; i++)
             {
-                NotifyActivating();
-                Loyalty += FriendP2.Cost;
-                int num;
-                for (int i = 0; i < Battle.FriendPassiveTimes; i = num + 1)
+                if (Battle.BattleShouldEnd)
                 {
-                    if (Battle.BattleShouldEnd)
-                    {
-                        yield break;
-                    }
-                    yield return PerformAction.Sfx("FairySupport", 0f);
-                    yield return new CastBlockShieldAction(Battle.Player, Block.Block, 0, BlockShieldType.Direct, false);
-                    num = i;
+                    yield break;
+                }
+                yield return PerformAction.Sfx("FairySupport", 0f);
+                yield return new CastBlockShieldAction(Battle.Player, Block.Block, 0, BlockShieldType.Direct, false);
+                if (args != null)
+                {
+                    args.DamageInfo = args.DamageInfo.BlockBy(Block.Block);
+                    args.AddModifier(this);
                 }
             }
-            yield break;
+        }
+
+
+
+
+        private IEnumerable<BattleAction> OnPlayerStatisticalTotalDamageDealt(StatisticalDamageEventArgs args)
+        {
+            if (!Battle.BattleShouldEnd && Zone == CardZone.Hand && Summoned && Loyalty >= -FriendP2.Cost)
+            {
+                var targets = args.ArgsTable.Where(kv => kv.Value.Any(e => e.DamageInfo.DamageType == DamageType.Attack)).Select(kv => kv.Key);
+
+                if(targets.Count() > 0)
+                    foreach (var a in AttackPassive(targets)) yield return a;
+            }
+        }
+        private void OnPlayerDamageTaking(DamageEventArgs args)
+        {
+            if (args.Cause != ActionCause.OnlyCalculate && !Battle.BattleShouldEnd 
+                && Zone == CardZone.Hand && Summoned && Loyalty >= -FriendP2.Cost 
+                && args.DamageInfo.DamageType == DamageType.Attack
+                && args.DamageInfo.Damage > 0f && !args.DamageInfo.IsGrazed
+                )
+            {
+                foreach (var a in ParryPassive(args)) { React(a); }
+            }
         }
         public override IEnumerable<BattleAction> OnTurnStartedInHand()
         {
@@ -207,36 +226,14 @@ namespace AyaShameimaru.Cards
             Loyalty += PassiveCost;
             if (Loyalty >= -FriendP2.Cost)
             {
-                Loyalty += FriendP2.Cost;
-                int num;
-                for (int i = 0; i < Battle.FriendPassiveTimes; i = num + 1)
-                {
-                    if (Battle.BattleShouldEnd)
-                    {
-                        yield break;
-                    }
-                    yield return PerformAction.Sfx("FairySupport", 0f);
-                    yield return new DamageAction(Battle.Player, Battle.AllAliveEnemies, Damage, "YoumuKan", GunType.Single);
-                    num = i;
-                }
+                foreach (var a in AttackPassive(Battle.AllAliveEnemies)) yield return a;
             }
             if (Loyalty >= -FriendP2.Cost)
             {
-                Loyalty += FriendP2.Cost;
-                int num;
-                for (int i = 0; i < Battle.FriendPassiveTimes; i = num + 1)
-                {
-                    if (Battle.BattleShouldEnd)
-                    {
-                        yield break;
-                    }
-                    yield return PerformAction.Sfx("FairySupport", 0f);
-                    yield return new CastBlockShieldAction(Battle.Player, Block.Block, 0, BlockShieldType.Direct, false);
-                    num = i;
-                }
+                foreach (var a in ParryPassive()) yield return a;
             }
-            yield break;
         }
+
         public override IEnumerable<BattleAction> SummonActions(UnitSelector selector, ManaGroup consumingMana, Interaction precondition)
         {
             GameRun.CanViewDrawZoneActualOrder += 1;

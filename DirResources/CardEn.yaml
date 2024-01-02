@@ -70,11 +70,8 @@ AyaFormofSalvation:
   Name: Form of Salvation
 AyaFriendMomiji:
   Description: "{FriendP}|f:Telegnosis|: The draw pile can be viewed in actual order."
-  UpgradedDescription: "{FriendP}|f:Telegnosis|: The draw pile can be viewed in actual order."
-  ExtraDescription1: "{FriendP2}|f:Chase|: When {PlayerName} deals attack damage, deal {Damage} damage to the target.\n{FriendP2}|f:Parry|: When {PlayerName} receives attack damage and would lose life from it, gain {Block} |Block|."
-  UpgradedExtraDescription1: "{FriendP2}|f:Chase|: When {PlayerName} deals attack damage, deal {Damage} damage to the target.\n{FriendP2}|f:Parry|: When {PlayerName} receives attack damage and would lose life from it, gain {Block} |Block|."
+  ExtraDescription1: "{FriendP2}|f:Chase|: When {PlayerName} attacks, deal {Damage} damage to the target(s).\n{FriendP2}|f:Parry|: When {PlayerName} would receive attack damage and lose life from it, gain {PassiveBlock} |Block|."
   ExtraDescription2: "{FriendU}|u:Fang Sign\u300CChewing Satisfaction\u300D|: Deal {Damage2} damage to the enemy with the least life. |Expel|: gain {Value2} life. |Accurate|"
-  UpgradedExtraDescription2: "{FriendU}|u:Fang Sign\u300CChewing Satisfaction\u300D|: Deal {Damage2} damage to the enemy with the least life. |Expel|: gain {Value2} life. |Accurate|"
   Name: Momiji, The Petty Patrol Tengu
 AyaIllusionaryDominance:
   Description: "Deal {Damage} damage {Times} times.\nDeal additional damage equal to {PlayerName}'s |Acceleration|.\nDeal that damage an additional time equal to {PlayerName}'s |Evasion|."
